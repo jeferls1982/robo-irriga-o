@@ -1,29 +1,21 @@
-# README #
+Passo a passo para a instalação:
 
-This README would normally document whatever steps are necessary to get your application up and running.
+1 - clone o repositório
+2 - Altere o arquivo ".env.example" para ".env"
+3 - Crie um banco de dados mysql , postgres ou o de sua preferência com nome "horta"
+4 - Altere o arquivo ".env" com seus dados
 
-### What is this repository for? ###
+	DB_CONNECTION=mysql
+	DB_HOST=127.0.0.1
+	DB_PORT=3306
+	DB_DATABASE=horta
+	DB_USERNAME=seu_username
+	DB_PASSWORD=seu_password
+	
+5 - Rode o comando "php artisan key:generate" para gerar sua chave unica do sistema
+6 - Rode o comando "php artisan migration" para criar suas tabelas no banco
+7 - Rode o comando "php artisan serve" para rodar o sistema
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+8 - Acesse o endereço: "http://127.0.0.1:8000" para acessar o sistema.
 
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+9- Pronto!
